@@ -2,10 +2,10 @@
     "use strict";
     /* https://learn.jquery.com/using-jquery-core/document-ready/ */
     jQuery(document).ready(function() {
- 
+
         /* initialize the slider based on the Slider's ID attribute */
         jQuery('#rev_slider_1').show().revolution({
-            
+
             responsiveLevels: [1200, 992, 768, 576],
             gridwidth:[1200, 992, 768, 576],
             delay: 5000,
@@ -26,24 +26,26 @@
                 onHoverStop: 'off',
 
                 touch: {
- 
+
                     touchenabled: 'on',
                     swipe_threshold: 75,
                     swipe_min_touches: 1,
                     swipe_direction: 'horizontal',
                     drag_block_vertical: true
-             
+
                 },
- 
+
                 arrows: {
-                    enable: true,
+                    // enable: true,
+                    enable: false,
                     style: 'hesperiden',
                     hide_onleave: true
 
                 },
- 
+
                 bullets: {
-                    enable: true,
+                    // enable: true,
+                    enable: false,
                     style: 'uranus',
                     tmp: '<span class="tp-bullet-inner"></span>',
                     hide_onleave: false,
@@ -61,15 +63,15 @@ var screenH = $(window).height();
 
     /* https://learn.jquery.com/using-jquery-core/document-ready/ */
     jQuery(document).ready(function() {
- 
+
         /* initialize the slider based on the Slider's ID attribute */
         jQuery('#rev_slider_2').show().revolution({
-            
+
             responsiveLevels: [1200, 992, 768, 576],
             gridwidth:[1200, 992, 768, 576],
             delay: 5000,
             /* options are 'auto', 'fullwidth' or 'fullscreen' */
-            sliderLayout: 'auto', 
+            sliderLayout: 'auto',
             autoHeight: 'on',
             minHeight: screenH,
             /* options that disable autoplay */
@@ -86,22 +88,22 @@ var screenH = $(window).height();
                 onHoverStop: 'off',
 
                 touch: {
- 
+
                     touchenabled: 'on',
                     swipe_threshold: 75,
                     swipe_min_touches: 1,
                     swipe_direction: 'horizontal',
                     drag_block_vertical: true
-             
+
                 },
- 
+
                 arrows: {
                     enable: true,
                     style: 'hesperiden',
                     hide_onleave: true
 
                 },
- 
+
                 bullets: {
                     enable: true,
                     style: 'uranus',
@@ -118,15 +120,15 @@ var screenH = $(window).height();
     });
 
     jQuery(document).ready(function() {
- 
+
         /* initialize the slider based on the Slider's ID attribute */
         jQuery('#rev_slider_3').show().revolution({
-            
+
             responsiveLevels: [1200, 992, 768, 576],
             gridwidth:[1200, 992, 768, 576],
             delay: 5000,
             /* options are 'auto', 'fullwidth' or 'fullscreen' */
-            sliderLayout: 'auto', 
+            sliderLayout: 'auto',
             autoHeight: 'on',
             minHeight: 690,
             /* options that disable autoplay */
@@ -143,22 +145,22 @@ var screenH = $(window).height();
                 onHoverStop: 'off',
 
                 touch: {
- 
+
                     touchenabled: 'on',
                     swipe_threshold: 75,
                     swipe_min_touches: 1,
                     swipe_direction: 'horizontal',
                     drag_block_vertical: true
-             
+
                 },
- 
+
                 arrows: {
                     enable: true,
                     style: 'hesperiden',
                     hide_onleave: true
 
                 },
- 
+
                 bullets: {
                     enable: true,
                     style: 'uranus',
@@ -177,15 +179,15 @@ var screenH = $(window).height();
 
     /* https://learn.jquery.com/using-jquery-core/document-ready/ */
     jQuery(document).ready(function() {
- 
+
         /* initialize the slider based on the Slider's ID attribute */
         jQuery('#rev_slider_4').show().revolution({
-            
+
             responsiveLevels: [1200, 992, 768, 576],
             gridwidth:[1200, 992, 768, 576],
             delay: 5000,
             /* options are 'auto', 'fullwidth' or 'fullscreen' */
-            sliderLayout: 'auto', 
+            sliderLayout: 'auto',
             autoHeight: 'on',
             minHeight: screenH,
             /* options that disable autoplay */
@@ -202,22 +204,22 @@ var screenH = $(window).height();
                 onHoverStop: 'off',
 
                 touch: {
- 
+
                     touchenabled: 'on',
                     swipe_threshold: 75,
                     swipe_min_touches: 1,
                     swipe_direction: 'horizontal',
                     drag_block_vertical: true
-             
+
                 },
- 
+
                 arrows: {
                     enable: true,
                     style: 'hesperiden',
                     hide_onleave: true
 
                 },
- 
+
                 bullets: {
                     enable: false,
                     style: 'uranus',
@@ -237,15 +239,15 @@ var screenH = $(window).height();
 
     /* https://learn.jquery.com/using-jquery-core/document-ready/ */
     jQuery(document).ready(function() {
- 
+
         /* initialize the slider based on the Slider's ID attribute */
         jQuery('#rev_slider_5').show().revolution({
-            
+
             responsiveLevels: [1200, 992, 768, 576],
             gridwidth:[1200, 992, 768, 576],
             delay: 5000,
             /* options are 'auto', 'fullwidth' or 'fullscreen' */
-            sliderLayout: 'auto', 
+            sliderLayout: 'auto',
             autoHeight: 'on',
             minHeight: screenH,
             /* options that disable autoplay */
@@ -262,22 +264,22 @@ var screenH = $(window).height();
                 onHoverStop: 'off',
 
                 touch: {
- 
+
                     touchenabled: 'on',
                     swipe_threshold: 75,
                     swipe_min_touches: 1,
                     swipe_direction: 'horizontal',
                     drag_block_vertical: true
-             
+
                 },
- 
+
                 arrows: {
                     enable: true,
                     style: 'hesperiden',
                     hide_onleave: true
 
                 },
- 
+
                 bullets: {
                     enable: false,
                     style: 'uranus',
