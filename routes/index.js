@@ -8,8 +8,13 @@ const router = vertex.router()
 	information, view here: https://mustache.github.io/#demo */
 router.get('/', (req, res) => {
 
+	const env = {
+		navLogo: process.env.NAV_LOGO
+	}
+
 	const data = {
 		cdn: process.env.TURBO_CDN,
+		env: env,
 		greeting: "Welcome to my restaurant",
 		description: "Thai food!!!"
 	}
