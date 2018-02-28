@@ -44,8 +44,8 @@
                 },
 
                 bullets: {
-                    // enable: true,
-                    enable: false,
+                  // enable: true,
+                  enable: false,
                     style: 'uranus',
                     tmp: '<span class="tp-bullet-inner"></span>',
                     hide_onleave: false,
