@@ -9,7 +9,16 @@ const router = vertex.router()
 router.get('/', (req, res) => {
 
 	const env = {
-		navLogo: process.env.NAV_LOGO
+		navLogo: process.env.NAV_LOGO,
+		facebook: process.env.FACEBOOK,
+		// instagram: process.env.INSTAGRAM	,
+		yelp: process.env.YELP,
+		name: process.env.NAME,
+		address: process.env.ADDRESS,
+		phone: process.env.PHONE,
+		year: process.env.YEAR,
+		lunchHours: process.env.LUNCH_HOURS,
+		pubHours: process.env.PUB_HOURS
 	}
 
 	const data = {
@@ -18,8 +27,18 @@ router.get('/', (req, res) => {
 		greeting: "Welcome to my restaurant",
 		description: "Thai food!!!"
 	}
-	res.render('index', data)
+	turbo.pageData('home')
+	.then(pageConfig => {
+		console.log(JSON.stringify(pageConfig))
+		data['page'] = pageConfig
+
+		res.render('index', data)
+	})
+	.catch(err => {
+		console.log('error ' + JSON.stringify(err.message) )
+	})
 })
+
 
 
 module.exports = router

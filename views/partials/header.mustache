@@ -4,8 +4,7 @@
     <!-- Logo -->
     <div class="logo col_header">
       <a href="/">
-        <img alt="logo-deli" src="{{ env.navLogo }}">
-      </a>
+        <img alt="logo-deli" class="nav-logo" src="{{ env.navLogo }}"></a>
     </div>
     <!-- Menu -->
     <div class="main_nav">
@@ -22,10 +21,9 @@
 
     <!-- Socials -->
     <div class="icon-header col_header">
-      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-yelp" aria-hidden="true"></i></a>
-
-      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://www.facebook.com/{{env.facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://www.yelp.com/{{env.yelp}}"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://instagram.com/{{env.instagram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
     </div>
   </div>
 

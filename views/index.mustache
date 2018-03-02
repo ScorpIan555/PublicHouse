@@ -10,6 +10,15 @@
 		.blog-detail {
 			padding: 16px;
 		}
+		.nav-logo {
+			width: 75px;
+			height: 75px;
+			padding-bottom: 10px;
+		}
+		.follow-us {
+			padding-left: 0px;
+			padding-right: 18px;
+		}
 	</style>
 </head>
 <body class="animsition">
@@ -28,7 +37,7 @@
 						data-bgfit="cover"
          				data-bgrepeat="no-repeat">
 
-						<div class="rs-background-video-layer"
+						<!-- <div class="rs-background-video-layer"
 							         data-ytid="pMN5D5FWCxI"
 							         data-volume="mute"
 							         data-forcerewind="on"
@@ -46,9 +55,29 @@
 							         data-aspectratio="16:9"
 							         data-autoplay="true"
 							         data-autoplayonlyfirsttime="false"
+						></div> -->
+
+						<div class="rs-background-video-layer"
+											 data-ytid="{{page.movie}}"
+											 data-volume="mute"
+											 data-forcerewind="on"
+											 data-nextslideatend="true"
+											 data-videoloop="loopandnoslidestop"
+											 data-videoattributes="version=3&enablejsapi=1&html5=1&hd=1&wmode=opaque&showinfo=0&rel=0&
+											 origin=http://templates.aucreative.co"
+											 data-videorate="1"
+											 data-videowidth="100%"
+											 data-videoheight="100%"
+											 data-videocontrols="none"
+											 data-videostartat="00:30"
+											 data-videoendat="01:21"
+											 data-forcecover="1"
+											 data-aspectratio="16:9"
+											 data-autoplay="true"
+											 data-autoplayonlyfirsttime="false"
 						></div>
 
-						<h3 class="tp-caption tp-resizeme caption-1"
+						<h4 class="tp-caption tp-resizeme caption-1"
 						data-frames='[{"delay":500,"speed":1800,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 					    data-x="center"
 					    data-y="middle"
@@ -56,8 +85,8 @@
 					    data-voffset="['-50','-50','-100','-120']"
 					    data-width="['1140','960','720','540']"
 					    data-lineheight="['150', '150', '120', '100']"
-					    data-fontsize="['110', '110', '100', '90']"
-					    data-height="['auto']">Seasonal Flavours</h3>
+					    data-fontsize="['60', '60', '50', '40']"
+					    data-height="['auto']">{{ page.greeting }}</h4>
 
 						<div id="btn-slide-1" class="tp-caption tp-resizeme btn-slide"
 						data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
@@ -160,7 +189,7 @@
 
 			<!-- food menu -->
 			<div class="row wrap-food-menu">
-				<div id="food-menu">
+				<div id="food-menu" style="width:auto">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
 							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#lunch" role="tab" aria-controls="lunch" aria-expanded="true">Lunch</a>
@@ -567,7 +596,7 @@
 	<div class="parallax-banner" >
 		<div class="content-banner">
 			<div class="text-banner wow zoomIn">
-				<h3>Feeling at Home</h3>
+				<h3>{{page.greeting2}}</h3>
 			</div>
 			<div class="symbol-banner wow zoomIn" data-wow-delay="0.5s">
 				<img alt="symbol" src="images/icons/symbol-banner.png">
