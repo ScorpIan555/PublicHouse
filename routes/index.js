@@ -11,7 +11,8 @@ router.get('/', (req, res) => {
 	const env = {
 		navLogo: process.env.NAV_LOGO,
 		facebook: process.env.FACEBOOK,
-		// instagram: process.env.INSTAGRAM	,
+		instagram: process.env.INSTAGRAM,
+		favIcon:  process.env.FAVICON,
 		yelp: process.env.YELP,
 		name: process.env.NAME,
 		address: process.env.ADDRESS,
@@ -31,14 +32,19 @@ router.get('/', (req, res) => {
 	.then(pageConfig => {
 		console.log(JSON.stringify(pageConfig))
 		data['page'] = pageConfig
+		return turbo.fetch('post', null)
 
+		// res.render('index', data)
+	})
+	.then(posts => {
+		console.log('POSTS:  ' + JSON.stringify(posts) )
+		data['posts'] = posts
 		res.render('index', data)
 	})
 	.catch(err => {
 		console.log('error ' + JSON.stringify(err.message) )
+		res.render('index', data)
 	})
 })
-
-
 
 module.exports = router

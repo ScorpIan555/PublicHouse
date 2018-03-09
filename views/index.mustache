@@ -10,15 +10,7 @@
 		.blog-detail {
 			padding: 16px;
 		}
-		.nav-logo {
-			width: 75px;
-			height: 75px;
-			padding-bottom: 10px;
-		}
-		.follow-us {
-			padding-left: 0px;
-			padding-right: 18px;
-		}
+
 	</style>
 </head>
 <body class="animsition">
@@ -32,30 +24,10 @@
 				<ul>
 					<!-- Slide 1 -->
 					<li data-transition="fade" data-delay="51000">
-						<img src="images/bar1.jpg" alt="Seasonal Flavours" class="rev-slidebg"
+						<img src="{{ page.banner-1 }}" alt="Seasonal Flavours" class="rev-slidebg"
 						data-bgposition="center center"
 						data-bgfit="cover"
          				data-bgrepeat="no-repeat">
-
-						<!-- <div class="rs-background-video-layer"
-							         data-ytid="pMN5D5FWCxI"
-							         data-volume="mute"
-							         data-forcerewind="on"
-							         data-nextslideatend="true"
-							         data-videoloop="loopandnoslidestop"
-							         data-videoattributes="version=3&enablejsapi=1&html5=1&hd=1&wmode=opaque&showinfo=0&rel=0&
-							         origin=http://templates.aucreative.co"
-							         data-videorate="1"
-							         data-videowidth="100%"
-							         data-videoheight="100%"
-							         data-videocontrols="none"
-							         data-videostartat="00:30"
-							         data-videoendat="01:21"
-							         data-forcecover="1"
-							         data-aspectratio="16:9"
-							         data-autoplay="true"
-							         data-autoplayonlyfirsttime="false"
-						></div> -->
 
 						<div class="rs-background-video-layer"
 											 data-ytid="{{page.movie}}"
@@ -75,7 +47,7 @@
 											 data-aspectratio="16:9"
 											 data-autoplay="true"
 											 data-autoplayonlyfirsttime="false"
-						></div>
+						>
 
 						<h4 class="tp-caption tp-resizeme caption-1"
 						data-frames='[{"delay":500,"speed":1800,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
@@ -593,10 +565,10 @@
 	</section>
 
 	<!-- Banner -->
-	<div class="parallax-banner" >
+	<div class="parallax-banner" style="background-image: url({{ page.banner-2 }})" >
 		<div class="content-banner">
 			<div class="text-banner wow zoomIn">
-				<h3>{{page.greeting2}}</h3>
+				<h3>{{page.greeting-2}}</h3>
 			</div>
 			<div class="symbol-banner wow zoomIn" data-wow-delay="0.5s">
 				<img alt="symbol" src="images/icons/symbol-banner.png">
@@ -614,67 +586,35 @@
 			<!-- title event -->
 			<div class="wrap-title-event row">
 				<div id="title-event" class="col-12">
-					<h6>Discover Our</h6>
 					<h2>Recent News</h2>
 				</div>
-					<div class="content-event col-sm-10 col-md-8 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="blog-post">
-							<div class="img-event">
-								<a href="#"><img alt="picture-event" src="images/img-event-01.jpg"></a>
-							</div>
-							<div class="blog-detail">
-								<h3><a class="hover-link-color" href="blog-detail.html">Deli Summer Auscoutics</a></h3>
-								<p>
-									Proin bocania nisl ut ultricies posuere nulla ut imperdiet nunc. Quisque id tellus vitae mauris feugiat comodone, donec pretium odio nec sagittis euismod.
-								</p>
-								<span class="date-event"><i class="fa fa-calendar" aria-hidden="true"></i> 21 June, 2017</span>
-								<span class="time-event"><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00AM - 22:00PM</span>
-							</div>
-						</div>
-					</div>
-					<div class="content-event col-sm-10 col-md-8 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="blog-post">
-							<div class="img-event">
-								<a href="#"><img alt="picture-event" src="images/img-event-01.jpg"></a>
-							</div>
-							<div class="blog-detail">
-								<h3><a class="hover-link-color" href="blog-detail.html">Deli Summer Auscoutics</a></h3>
-								<p>
-									Proin bocania nisl ut ultricies posuere nulla ut imperdiet nunc. Quisque id tellus vitae mauris feugiat comodone, donec pretium odio nec sagittis euismod.
-								</p>
-								<span class="date-event"><i class="fa fa-calendar" aria-hidden="true"></i> 21 June, 2017</span>
-								<span class="time-event"><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00AM - 22:00PM</span>
-							</div>
-						</div>
-					</div>
-					<div class="content-event col-sm-10 col-md-8 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="blog-post">
-							<div class="img-event">
-								<a href="#"><img alt="picture-event" src="images/img-event-01.jpg"></a>
-							</div>
-							<div class="blog-detail">
-								<h3><a class="hover-link-color" href="blog-detail.html">Deli Summer Auscoutics</a></h3>
-								<p>
-									Proin bocania nisl ut ultricies posuere nulla ut imperdiet nunc. Quisque id tellus vitae mauris feugiat comodone, donec pretium odio nec sagittis euismod.
-								</p>
-								<span class="date-event"><i class="fa fa-calendar" aria-hidden="true"></i> 21 June, 2017</span>
-								<span class="time-event"><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00AM - 22:00PM</span>
-							</div>
-						</div>
-					</div>
 
-
+				{{#posts}}
+				<div class="content-event col-sm-10 col-md-8 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+					<div class="blog-post">
+						<div class="img-event">
+							<a href="#"><img alt="picture-event" src="{{image}}=s400-c"></a>
+						</div>
+						<div class="blog-detail">
+							<h3><a class="hover-link-color" href="blog-detail.html">{{title}}</a></h3>
+							<p>
+								Proin bocania nisl ut ultricies posuere nulla ut imperdiet nunc. Quisque id tellus vitae mauris feugiat comodone, donec pretium odio nec sagittis euismod.
+							</p>
+							<span class="date-event" style="border:none">
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								 {{dateString}}
+							</span>
+						</div>
+					</div>
 				</div>
-
-
-				</div>
+				{{/posts}}
 
 			</div>
 		</div>
 	</section>
 
 	<!-- Reservation -->
-	<div class="parallax-banner-2">
+	<div class="parallax-banner-2" style="background-image: url({{ page.banner-3 }})">
 		<div class="content-reservation">
 			<div class="text-reservation wow fadeInUp" data-wow-delay="0.2">
 				<h6>Reservation</h6>
